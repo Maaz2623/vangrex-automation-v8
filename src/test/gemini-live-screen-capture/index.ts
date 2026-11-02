@@ -1,5 +1,5 @@
 import { GoogleGenAI, Modality } from "@google/genai";
-import { ScreenCapture } from "./test-screen-capture";
+import { ScreenCapture } from "./screen-capture";
 
 const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY;
 
