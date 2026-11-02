@@ -1,31 +1,21 @@
 {
   "name": "vangrex-automation-v8",
-  "version": "0.0.0",
+  "module": "index.ts",
   "type": "module",
-  "imports": {
-    "#*": "./agent/*",
-    "#evals/*": "./evals/*"
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
   },
-  "scripts": {
-    "build": "eve build",
-    "deploy": "eve deploy",
-    "dev": "eve dev",
-    "eval": "eve eval",
-    "start": "eve start",
-    "typecheck": "tsc"
+  "peerDependencies": {
+    "typescript": "^5"
   },
   "dependencies": {
-    "@vercel/connect": "2.7.0",
-    "ai": "^7.0.137",
-    "eve": "^1.0.0-rc.1",
-    "zod": "4.5.4"
-  },
-  "devDependencies": {
-    "@types/node": "24.x",
-    "typescript": "7.0.2"
-  },
-  "engines": {
-    "node": "24.x"
+    "@google/genai": "^2.32.0",
+    "@livekit/agents": "^1.9.5",
+    "@livekit/agents-plugin-google": "1.x",
+    "@types/screenshot-desktop": "^1.15.0",
+    "dotenv": "^18.0.9",
+    "screenshot-desktop": "^1.15.7",
+    "sharp": "^0.35.5"
   }
-
 }
